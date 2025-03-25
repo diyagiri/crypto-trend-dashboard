@@ -1,6 +1,5 @@
 __pycache__/
 *.pyc
 .venv/
-snapshots/
 .DS_Store
 .env
