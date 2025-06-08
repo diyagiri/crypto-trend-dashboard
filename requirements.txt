@@ -5,3 +5,4 @@ seaborn
 plotly>=5.0.0
 numpy
 requests
+streamlit-autorefresh
