@@ -2,44 +2,39 @@
 
 A live, interactive Streamlit web app leveraging the free CoinGecko API to visualize and analyze cryptocurrency data in real time.
 
+🔗 **Live Demo:** https://crypto-trend-dashboard-qgaqtk8obbhyg4ye3chrg3.streamlit.app/
+
 ## 🚀 Features
 
 - **Global Market Metrics**  
   Total market cap, 24 h cap change, active cryptocurrencies, and BTC dominance.
-
 - **Top Coin Overview**  
-  Displays the leading coin’s logo, name, market cap, 24 h volume, and 24 h % change.
-
+  Leader coin’s logo, market cap, 24 h volume, and % change.
 - **Trends Tab**  
-  - Bar chart of 24 h % change distribution.  
-  - Historical price chart (selectable days) with RSI & MACD technical indicators.  
-  - Today’s trending coins.
-
+  - 24 h % change distribution.  
+  - Historical price chart (selectable days) with RSI & MACD.  
+  - Trending coins list.
 - **Compare Coins**  
-  - Multi-select current price comparison with coin logos.  
-  - Correlation heatmap of 24 h % changes.
-
+  - Multi-select price comparison with logos.  
+  - Historical price overlay and daily returns correlation heatmap.
 - **Movers & Rankings**  
-  - Top 5 gainers and losers (24 h % change) with logos.  
-  - Top 10 coins by market cap, displayed with logos and bar chart.
-
+  - Top 5 gainers/losers by 24 h % change with logos.  
+  - Top 10 coins by market cap with logos and chart.
 - **Portfolio Tracker**  
-  - Input your holdings and purchase prices.  
-  - Calculates current value, cost basis, P&L %, and shows allocation pie chart.
-
-- **Interactive Help**  
-  Hover over the “?” icons on sliders and selectors to see context-sensitive tooltips.
-
+  - Input hypothetical holdings and purchase prices.  
+  - Calculates current value, cost basis, P&L %, and allocation pie.
+- **Info Expanders**  
+  Contextual tooltips and detailed explanations for beginners.
 - **Auto-Refresh**  
-  Data reloads every 60 seconds via `st_autorefresh` for truly live updates.
+  Live data refreshes every 60 seconds via `st_autorefresh`.
 
-## 🔧 Project Structure
+## 📁 Project Structure
 
 ```
 crypto-dashboard/
 ├── app.py           # Streamlit UI layout (tabs, widgets, charts)
-├── data.py          # Data‐fetching functions (CoinGecko API calls)
-├── utils.py         # Data processing & technical indicators (RSI, MACD, formatting)
+├── data.py          # CoinGecko API fetchers
+├── utils.py         # Data processing & technical indicators
 ├── requirements.txt # Python dependencies
 └── README.md        # Project overview & setup guide
 ```
@@ -48,15 +43,15 @@ crypto-dashboard/
 
 1. **Clone the repository**  
    ```bash
-   git clone <your-repo-url>
-   cd crypto-dashboard
+   git clone https://github.com/YourUsername/Automating_Crypto_Website_API_Pull.git
+   cd Automating_Crypto_Website_API_Pull
    ```
 
 2. **Create & activate a virtual environment**  
    ```bash
    python3 -m venv .env
    source .env/bin/activate        # macOS/Linux
-   .env\Scriptsctivate           # Windows
+   .env\Scripts\activate         # Windows
    ```
 
 3. **Install dependencies**  
@@ -64,10 +59,13 @@ crypto-dashboard/
    pip install -r requirements.txt
    ```
 
-4. **Run the app**  
+4. **Run locally**  
    ```bash
    streamlit run app.py
    ```
+
+5. **View live demo**  
+   Open the app in your browser at the link above.
 
 ## 📦 Dependencies
 
@@ -83,8 +81,8 @@ crypto-dashboard/
 - Export chart data as CSV.  
 - On-chart hover tooltips for detailed datapoints.  
 - WebSocket integration for live order-book depth.  
-- Theme toggle (light/dark).  
+- Custom domain & theming.
 
 ---
 
-Built with 🐍 Python, 📊 Plotly & Streamlit—perfect for showcasing real-time analytics in your portfolio!
+**Built with 🐍 Python, 📊 Plotly & Streamlit—showcase your real-time analytics skills!**
