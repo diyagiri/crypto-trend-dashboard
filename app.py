@@ -34,7 +34,7 @@ with st.expander("ℹ️ About this Dashboard", expanded=False):
         3. **Technical Analysis**: Compute RSI and MACD indicators to highlight momentum shifts.
         4. **Portfolio Tracking**: Input hypothetical holdings to calculate P&L and allocation.
 
-        Designed as a portfolio project for MSBA applications, it emphasizes code organization, interactivity, and clear explanations for beginner audiences.
+        Designed as a portfolio project it emphasizes code organization, interactivity, and clear explanations for beginner audiences.
     """)
 
 # ── Auto-refresh every 60 seconds ───────────────────────────────────────────
